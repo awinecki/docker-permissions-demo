@@ -1,0 +1,6 @@
+FROM alpine:latest
+
+RUN addgroup -g 1001 pacman
+RUN adduser -D -u 1001 -G pacman pacman
+
+USER pacman
